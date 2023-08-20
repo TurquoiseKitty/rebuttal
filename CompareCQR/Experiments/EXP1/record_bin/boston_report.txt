@@ -1,0 +1,200 @@
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: HNN
+With training X of size: (455,13)
+We are grid searching for the best LR and bat_size
+After 0.03 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.01, 10)
+we finally choose (0.01, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 1.868915319442749
+	val_rmse: 4.58542521794637
+	val_MACE: 0.050720530872543655
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: MC_drop
+With training X of size: (455,13)
+We are grid searching for the best LR and bat_size
+After 0.03 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.005, 64)
+	 (0.01, 10)
+	 (0.01, 10)
+we finally choose (0.01, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 2.470792849858602
+	val_rmse: 4.680586655934651
+	val_MACE: 0.1338451107343038
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: DeepEnsemble
+With training X of size: (455,13)
+We are grid searching for the best LR and bat_size
+After 0.07 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.01, 10)
+we finally choose (0.005, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 1.5593372186024983
+	val_rmse: 3.0932788848876953
+	val_MACE: 0.06441078335046768
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: HNN_BeyondPinball
+With training X of size: (455,13)
+We are grid searching for the best LR and bat_size
+After 0.02 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 64)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.01, 10)
+	 (0.01, 10)
+we finally choose (0.005, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_beyondPinBall: 0.7614811857541403
+	val_rmse: 2.5784599781036377
+	val_MACE: 0.14615488052368164
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: vanillaPred
+With training X of size: (455,13)
+We are grid searching for the best LR and bat_size
+After 0.01 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.01, 64)
+	 (0.01, 64)
+	 (0.005, 64)
+we finally choose (0.01, 64) as the best hyperparameters
+with corresponding evaluations:
+	val_mse: 9.525839487711588
+	val_rmse: 3.085625648498535
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: HNN_MMD
+With training X of size: (455,13)
+After training an HNN model, we retrain it based on the MMD loss
+And grid searching for the best LR and bat_size
+After 0.01 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.005, 128)
+	 (0.005, 64)
+	 (0.005, 128)
+	 (0.005, 64)
+	 (0.005, 64)
+we finally choose (0.005, 64) as the best hyperparameters
+with corresponding evaluations:
+	val_MMD: 0.0831879402200381
+	val_MACE: 0.2046935906012853
+	val_nll: 277.8362782796224
+	val_rmse: 4.972278912862142
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: vanillaKernel
+With training X of size: (228,13)
+After training a vanilla prediction model
+And grid searching for the best kernel width
+After 0.00 hours of training
+We get a few ideal choices for tuple the width
+	 5
+	 50
+	 10
+	 50
+	 10
+we finally choose 10 as the best hyperparameters
+with corresponding evaluations:
+	MACE: 0.06067473441362381
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+
+
+# -------------------------------------------------
+
+On dataset: boston
+We are training model: vanillaMSQR
+With training X of size: (455,13)
+After training a vanilla prediction model
+We search for the best width and LR for the MSQR algorithm
+After 0.02 hours of training
+We get a few ideal choices for tuple (LR, wid)
+	 (0.005, 5)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.005, 5)
+	 (0.005, 10)
+we finally choose (0.005, 10) as the best hyperparameters
+with corresponding evaluations:
+	MACE: 0.046262625604867935
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+

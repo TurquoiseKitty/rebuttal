@@ -1,0 +1,201 @@
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: HNN
+With training X of size: (4408,11)
+We are grid searching for the best LR and bat_size
+After 0.13 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.005, 64)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.01, 64)
+we finally choose (0.01, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 0.24657224615414938
+	val_rmse: 0.771756649017334
+	val_MACE: 0.043212135011951126
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: MC_drop
+With training X of size: (4408,11)
+We are grid searching for the best LR and bat_size
+After 0.19 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.005, 10)
+	 (0.01, 10)
+	 (0.005, 10)
+	 (0.01, 64)
+	 (0.01, 10)
+we finally choose (0.005, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 0.19884557028611502
+	val_rmse: 0.7521731853485107
+	val_MACE: 0.026794602473576862
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: DeepEnsemble
+With training X of size: (4408,11)
+We are grid searching for the best LR and bat_size
+After 0.28 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.005, 10)
+	 (0.005, 10)
+	 (0.01, 10)
+	 (0.005, 10)
+	 (0.005, 10)
+we finally choose (0.005, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_nll: 0.19043655196825662
+	val_rmse: 0.7370148499806722
+	val_MACE: 0.03399494352440039
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: HNN_BeyondPinball
+With training X of size: (4408,11)
+We are grid searching for the best LR and bat_size
+After 0.16 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.005, 64)
+	 (0.005, 64)
+	 (0.005, 64)
+	 (0.005, 64)
+we finally choose (0.005, 64) as the best hyperparameters
+with corresponding evaluations:
+	val_beyondPinBall: 0.171702707807223
+	val_rmse: 0.7492205500602722
+	val_MACE: 0.03579293377697468
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: vanillaPred
+With training X of size: (4408,11)
+We are grid searching for the best LR and bat_size
+After 0.08 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.01, 10)
+	 (0.005, 10)
+	 (0.01, 10)
+	 (0.01, 10)
+	 (0.01, 64)
+we finally choose (0.01, 10) as the best hyperparameters
+with corresponding evaluations:
+	val_mse: 0.6104503075281779
+	val_rmse: 0.7812175949414571
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: HNN_MMD
+With training X of size: (4408,11)
+After training an HNN model, we retrain it based on the MMD loss
+And grid searching for the best LR and bat_size
+After 0.09 hours of training
+We get a few ideal choices for tuple (LR, bat_size)
+	 (0.001, 128)
+	 (0.001, 64)
+	 (0.001, 64)
+	 (0.001, 64)
+	 (0.005, 128)
+we finally choose (0.001, 64) as the best hyperparameters
+with corresponding evaluations:
+	val_MMD: 0.003389224448862175
+	val_MACE: 0.12007659673690796
+	val_nll: 2.2104458808898926
+	val_rmse: 0.8103160659472147
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: vanillaKernel
+With training X of size: (2204,11)
+After training a vanilla prediction model
+And grid searching for the best kernel width
+After 0.02 hours of training
+We get a few ideal choices for tuple the width
+	 50
+	 50
+	 50
+	 50
+	 1
+we finally choose 1 as the best hyperparameters
+with corresponding evaluations:
+	MACE: 0.01889190822839737
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+
+
+
+# -------------------------------------------------
+
+On dataset: wine
+We are training model: vanillaMSQR
+With training X of size: (4408,11)
+After training a vanilla prediction model
+We search for the best width and LR for the MSQR algorithm
+After 0.20 hours of training
+We get a few ideal choices for tuple (LR, wid)
+	 (0.005, 5)
+	 (0.005, 5)
+	 (0.005, 5)
+	 (0.005, 10)
+	 (0.005, 5)
+we finally choose (0.005, 5) as the best hyperparameters
+with corresponding evaluations:
+	MACE: 0.020819205790758133
+All configs are recorded into yaml files in the config directory
+
+
+# -------------------------------------------------
+

@@ -1,0 +1,24 @@
+实验1
+
+数据：	8个UCI数据集
+
+每个数据集上重复5次实验
+
+Benchmark：（所有网络隐藏层均固定为10 X 10，最大epoch均固定为200，early stopping约定为20次无improvement则停止训练）
+	1. heteroskedastic neural network(NLL loss)
+			2. heteroskedastic neural network + isotonic regression
+	3. MC dropout(NLL loss)
+	4. Deep Ensemble(NLL loss)
+	5. gaussian process model
+		6. heteroskedastic neural network(NLL loss + MMD loss, from zhujun)
+	7. heteroskedastic neural network(Beyond Pinball Loss)
+	?. vanilla prediction
+		8. vanilla prediction network(mse loss) + MSQR(from BeyondPinballLoss)
+		9. vanilla prediction network(mse loss) + kernel method
+			10. random forest + kernel method
+
+Criterions: 
+	1. RMSE loss (just for mean prediction)
+	2. MACE (mean absolute calibration error)
+	3. AGCE  (adversarial group calibratrion error)
+	3. Check score (or called pinball loss)
